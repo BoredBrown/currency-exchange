@@ -1,8 +1,9 @@
-import {Column, Entity} from 'typeorm'
+import {PrimaryColumn, Entity} from 'typeorm'
 
 
 @Entity()
 export class CurrenciesEntity {
-    @Column()
-    currencies: [{label: string, value: string}]
+    @PrimaryColumn()
+    label: string
+    value: string
 }
